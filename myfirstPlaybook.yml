@@ -1,0 +1,14 @@
+---
+- host : all
+  become : yes
+  tasks : 
+   - name : Install webserver on ubuntu
+     apt : 
+      name : apache2
+      state : present 
+
+   - name : Install tree
+     apt :
+      name : tree
+      state : present 
+
